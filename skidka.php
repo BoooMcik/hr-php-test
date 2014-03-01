@@ -26,6 +26,7 @@ class SkidkaUAParser
         }
         if ($this->_models && count($this->_models) >= 10 ) {
             echo implode("\n", $this->_models);
+	    echo "\n";
             die;
         }
      }
