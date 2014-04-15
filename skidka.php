@@ -1,6 +1,6 @@
 <?php
 
-class SkidkaUAParser
+class SuperParser
 {
     protected $_stack = array();
     protected $_models = array();
@@ -57,5 +57,5 @@ class SkidkaUAParser
     }
 }
 
-$parser = new SkidkaUAParser("http://export.skidka.ua/hotline_g.xml");
+$parser = new SuperParser("https://s3-eu-west-1.amazonaws.com/opsway-share/g.xml");
 $parser->parse();
